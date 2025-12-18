@@ -1,0 +1,5 @@
+# robots.txt für martin-hip.de
+User-agent: *
+Allow: /
+
+Sitemap: https://martin-hip.de/sitemap.xml

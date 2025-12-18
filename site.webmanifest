@@ -1,0 +1,24 @@
+{
+  "name": "Martin Hilpoltsteiner – Portfolio",
+  "short_name": "Portfolio",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5bcbf0",
+  "description": "Portfolio – Interaction & Motion Design by Martin Hilpoltsteiner.",
+  "icons": [
+    {
+      "src": "img/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,575 @@
+@charset "UTF-8";
+
+
+:root {
+
+    /*COLOR INACTIVE Filter color*/
+    /*--bs-link-color: #676767;*/
+
+    /*COLOR Breadcrumbs inavtive, Gallery Projects Header inactive color */
+    /*--mh-nav-link-color: #676767;*/
+
+
+
+    --mh-accent: #3399ff;
+    --mh-inactive: #676767;
+    --mh-active: black;
+    --mh-active: #3399ff;
+}
+
+
+.container {
+    max-width: 960px !important;
+    background: white;
+}
+
+
+/*projektseite hero bild/ video/////////////*/
+.hero-container-project {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+strong {
+    font-weight: 600;
+    color: #5a5a5a;
+}
+
+
+p.lead {
+    font-size: clamp(1.1rem, 3vw, 1.25rem);
+    color: #7a7a7a;
+}
+
+p.about {
+    color: #7a7a7a;
+}
+
+ul.about {
+    color: #7a7a7a;
+}
+
+
+
+.h2 {
+    font-weight: 500;
+
+
+}
+
+/*Nur related project*/
+.h5 {
+
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+/*Project details/////////////*/
+
+.mh-about {
+    /*background: white;*/
+    margin-bottom: 0;
+    padding-top: 1rem;
+    padding-left: 0;
+}
+
+
+/*h6 style*/
+.project-details {
+    margin-bottom: .1rem;
+    color: black;
+}
+
+/* ///////////////////////*/
+
+
+#content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+
+/*//////////////GALLERY GRID/////////////*/
+.mh-grid {
+    /*--bs-gutter-x: var(--mh-gap);*/
+    --bs-gutter-y: 3rem;
+}
+
+.mh-thumb.ratio img {
+    object-fit: cover;
+}
+
+
+
+
+header {
+    max-width: 960px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /*background: lightslategrey;*/
+    background: #e0e2e7;
+}
+
+
+article {
+    /*background:#f9f9f9;*/
+    background: #f8f9fc;
+    padding-left: clamp(0.3rem, 2vw, 2rem);
+    padding-right: clamp(0.3rem, 2vw, 2rem);
+    padding-bottom: 3rem;
+}
+
+/*Article anpassen breite für farbe*/
+/*anpassen für related projects*/
+.row-custom {
+    margin-left: -.5rem;
+    /* dein Wert */
+}
+
+
+
+/*brand: LOGO: NAME */
+.navbar-brand .brand-line {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #565656;
+    line-height: 1.1;
+}
+
+.navbar-brand .brand-tag {
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #9c9c9c;
+}
+
+
+
+#navPrimary .brand-tag {
+    display: none;
+}
+
+
+
+/*//////////////MAIN NAVIGATION-INTERACTION ELEMENTS ////////////////////////////////////////////*/
+
+.user-is-tabbing :focus {
+    outline: 2px solid var(--mh-accent);
+    outline-offset: 2px;
+}
+
+
+
+
+
+/*//////////////WORK/ABOUT MENUE COLORS AND MORE /////////////*/
+.nav-underline .nav-link {
+    border-bottom: 0;
+}
+
+
+.nav-underline .nav-link:hover {
+    border-bottom: 0;
+    color: var(--mh-inactive);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--mh-accent);
+    /* nur Unterstrich einfärben */
+}
+
+
+/*COLOR ACTIVE WORK/ABOUT*/
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    border-bottom: 0;
+    color: var(--mh-active);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--mh-accent);
+    /* nur Unterstrich einfärben */
+
+}
+
+/*///////////////////////////////////////////////////*/
+
+
+
+
+
+
+/*//CATEGORY FILTER /////////////*/
+
+/*LINKS*/
+.filter-bar .nav-link {
+    color: var(--mh-inactive);
+}
+
+.nav-underline .nav-link.active {
+    border-bottom: 0;
+    color: var(--mh-active);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--mh-accent);
+
+}
+
+
+/*COLOR hover filter*/
+.filter-bar .nav-link:hover {
+    color: var(--mh-inactive);
+    text-decoration-color: var(--mh-accent);
+    /* nur Unterstrich einfärben */
+
+}
+
+.filter-bar .nav-link.active:hover {
+    color: var(--mh-accent);
+    text-decoration-color: var(--mh-accent);
+    /* nur Unterstrich einfärben */
+
+}
+
+
+.navbar-toggler {
+    border: 1px solid #8f8f8f;
+    border-radius: .5rem;
+    border-radius: 0;
+    padding: clamp(0.1rem, 1vw, 0.4rem) clamp(0.2rem, 1.5vw, 0.6rem);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+    border: 3px solid #999;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mh-nav-link-color);
+    font-size: 1rem;
+}
+
+
+a:hover {
+    color: var(--mh-accent);
+}
+
+
+/*vertical dist underline Filter+ Main Menue */
+.nav-underline .nav-link {
+    padding-bottom: .1rem;
+    font-size: 1rem;
+}
+
+/*horizontal dist elements Filter+ Main Menue */
+.nav-underline {
+    --bs-nav-underline-gap: clamp(0.1rem, 2vw, 1rem);
+}
+
+
+
+/* Mehr Abstand zum Logo nur im geöffneten mobilen Menü */
+#navPrimary.collapse.show {
+    padding-top: 0.4rem;
+    /* Abstand nach innen */
+}
+
+
+
+/*//Breadcrump+ Filter/////////////*/
+.mh-bc-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 2.25rem;
+}
+
+
+
+.mh-breadcrumb {
+    font-size: 1rem;
+    /*--bs-breadcrumb-divider: '›';*/
+    --bs-breadcrumb-divider: "\203A";
+    /* › */
+    margin: 0;
+
+}
+
+.mh-bc a {
+    color: var(--mh-inactive);
+
+}
+
+.mh-bc a:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+     text-decoration-thickness: 2px;
+    text-decoration-color: var(--mh-accent);
+    /* nur Unterstrich einfärben */
+    /*color: var(--mh-accent);*/
+
+}
+
+/*//Breadcrump active element/////*/
+.breadcrumb-item[aria-current="page"] {
+    color: var(--mh-active);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--mh-accent);
+    /* nur Unterstrich einfärben */
+}
+
+
+
+
+/*//ARROWS/////////////*/
+.mh-bc-arrows {
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+}
+
+.mh-bc-arrows a {
+    color: #7b7b7b;
+    text-decoration: none;
+    font-size: 4.6rem;
+    font-weight: 300;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    /*besser mittig zentrieren*/
+    padding-bottom: 1rem;
+}
+
+
+.mh-bc-arrows a:hover {
+    color: var(--mh-accent);
+}
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////*/
+/*//////////////MEDIA QUERRIES/////////////*/
+
+/* bigger sceeens- bigger than 992px */
+@media (min-width: 992px) {
+    header {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+
+/* smaller screens - smaller than 768px */
+@media (max-width: 768px) {
+
+
+    .hero-container-project {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .navbar-brand {
+        white-space: normal;
+    }
+
+    /*abstand unterstreichung Nav */
+    .nav-underline .nav-link {
+        display: inline;
+        font-size: 0.9rem;
+        letter-spacing: -.01em;
+
+    }
+
+
+    .navbar-brand .brand-line {
+        display: block;
+        font-size: 1.15rem;
+    }
+
+    .navbar-brand .brand-tag {
+        display: block;
+        margin-left: 0;
+        line-height: 1.2;
+        font-size: 1.15rem;
+    }
+
+
+    /*pfeile grösse leicht verringern*/
+    .mh-bc-arrows a {
+        font-size: 4rem;
+    }
+
+    /*pfeile abstand erhöhen accesibility*/
+    .mh-bc-arrows {
+        gap: .8rem;
+    }
+
+
+    .breadcrumb-item+.breadcrumb-item {
+        padding-left: 0.25rem;
+    }
+}
+
+
+
+
+/*//////////////HERO SLIDER/////////////*/
+/*.carousel.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+.carousel.carousel-fade .carousel-item-next.carousel-item-start,
+.carousel.carousel-fade .carousel-item-prev.carousel-item-end {
+    opacity: 0;
+    transform: none;
+}
+*/
+.carousel-indicators [data-bs-target] {
+    /*  background-color: var(--mh-accent);*/
+}
+
+/* Carousel-Controls mittig ausrichten */
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+    height: auto;
+}
+
+/* weiße Pfeile mit schwarzem Rand */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: drop-shadow(0 0 0.5px #495057);
+}
+
+
+/*//////////////LIGHTBOX/////////////*/
+.lb-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1080;
+}
+
+.lb-backdrop.is-open {
+    display: flex;
+}
+
+.lb-img {
+    max-width: 92vw;
+    max-height: 88vh;
+}
+
+
+.lb-close,
+.lb-prev,
+.lb-next {
+    position: fixed;
+    color: #fff;
+    background: transparent;
+    border: none;
+}
+
+.lb-close {
+    top: 12px;
+    right: 12px;
+    font-size: 2rem;
+}
+
+.lb-prev,
+.lb-next {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    font-weight: 300;
+    padding: .5rem;
+    filter: drop-shadow(0 0 0.5px #495057);
+}
+
+.lb-prev {
+    left: 8px;
+}
+
+.lb-next {
+    right: 8px;
+}
+
+.lb-close:hover,
+.lb-prev:hover,
+.lb-next:hover {
+    filter: none;
+    color: #ccc;
+}
+
+.lb-img {
+    width: auto !important;
+    height: auto !important;
+    max-width: 92vw;
+    max-height: 88vh;
+    object-fit: contain;
+}
+
+
+
+
+/* Bild-Zoom-Effekt */
+.mh-thumb {
+    overflow: hidden;
+}
+
+.mh-thumb img {
+    display: block;
+    border: 1px solid #dee2e6;
+    transition: transform 0.3s ease;
+}
+
+.mh-thumb:hover img {
+    ;
+    transform: scale(1.05);
+}
+
+/* Titel-Farbe beim Hover über die Karte ändern */
+.mh-card:hover .mh-card__title a {
+    color: var(--mh-accent);
+    /* oder eine andere Farbe wie #5bcbf0 */
+    transition: color 0.3s ease;
+}
+
+
+
+/* Index- Bild-Filtern-Animation-Effekt */
+.mh-grid>.col {
+    transition: opacity .2s ease;
+}
+
+.mh-grid>.col.d-none {
+    opacity: 0;
+}

@@ -1,0 +1,151 @@
+/* Cookie Banner */
+#cookie-banner {
+    position: fixed;
+    left: 50%;
+    bottom: 2rem;
+    transform: translateX(-50%);
+    width: min(800px, calc(100% - 6rem));
+    background: #222;
+    color: #fff;
+    z-index: 9999;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, .25);
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+/* Vimeo placeholder */
+.vimeo-embed {
+  background: #e6e6e6;
+  color: #333;
+  display: flex;
+  flex-direction: column;   /* << Button unter den Text */
+  align-items: center;      /* horizontal zentrieren */
+  justify-content: center;  /* vertikal zentrieren */
+  text-align: center;
+  gap: 0.5rem;              /* Abstand Text <-> Button */
+  min-height: 280px;
+  padding: 16px;
+}
+
+
+.vimeo-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* Abstand zwischen Text und Button */
+}
+
+.vimeo-placeholder p {
+    margin:0;
+}
+
+
+
+
+/* Layout */
+#cookie-banner .cb-inner {
+    gap: 12px 16px;
+    padding: 14px 16px;
+    align-items: center;
+}
+
+
+/* Sprachumschalter (Radio-Inputs verstecken) */
+.cb-lang-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Pill-Stil der Labels */
+.cb-lang {
+    display: inline-flex;
+    gap: 6px;
+}
+
+.cb-lang-option {
+    cursor: pointer;
+}
+
+.cb-pill {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 2px;
+    border: 1px solid #555;
+    background: transparent;
+    color: #ddd;
+    font-size: 12px;
+    user-select: none;
+}
+
+/* Aktiver Zustand je nach :checked */
+#cb-lang-en:checked~.cb-inner .cb-lang-option[for="cb-lang-en"] .cb-pill,
+#cb-lang-de:checked~.cb-inner .cb-lang-option[for="cb-lang-de"] .cb-pill {
+    background: #444;
+    color: #fff;
+    border-color: #666;
+}
+
+/* Textsprachen innerhalb des Banners toggeln */
+#cookie-banner .cb-text [lang],
+#cookie-banner .cb-btn [lang] {
+    display: none;
+
+}
+
+#cb-lang-en:checked~.cb-inner .cb-text [lang="en"],
+#cb-lang-en:checked~.cb-inner .cb-btn [lang="en"] {
+    display: inline;
+
+}
+
+#cb-lang-de:checked~.cb-inner .cb-text [lang="de"],
+#cb-lang-de:checked~.cb-inner .cb-btn [lang="de"] {
+    display: inline;
+}
+
+/* Buttons */
+.cb-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cb-btn {
+    border: 0;
+    padding: 4px 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+p.cb-text{
+    margin-top: 1rem;
+}
+
+
+.cb-btn.accept {
+    background: #0dcaf0;
+    color: #101010;
+}
+
+.cb-btn.decline {
+    background: #555;
+    color: #fff;
+}
+
+/* Links */
+#cookie-banner a {
+    color: #0dcaf0;
+    /*text-decoration: underline;*/
+}
+
+
+
+
+.cb-btn.small {
+  padding: 4px 8px;
+  font-size: 13px;
+  margin-left: 8px;
+}
